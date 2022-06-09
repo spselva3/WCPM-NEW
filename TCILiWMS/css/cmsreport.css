@@ -1,0 +1,229 @@
+﻿
+/*@charset "utf-8";*/
+* { margin-left: 0;
+    margin-right: 0;
+    margin-top: 0px;
+}
+body { height: 100%; background: #cccccc; font-family: Calibri; }
+/*USERS PAGE STYLES-----------------------   */
+#dvusersgridhead { font-family: Calibri; font-size: small; font-weight: bold; }
+
+/*END*----------------------/
+/*FOR REPORT MASTER PAGE LAYOUT*/
+#container { margin: 0 auto; height: 100%; min-height: 100%; height: auto !important; width: 1024px; }
+form { height: 100%; padding: 0px; }
+#logo { font-family: Arial, Calibri; font-size: xx-large; width: 99.8%; vertical-align: middle; line-height: 78px; font-weight: bold; border:solid 1px gray; }
+
+#menu { background-color: #D9E0F5; height: 20px; width: 99.8%; padding: 5px 0px; font-family: Calibri; font-weight: bold; font-size: small; text-indent: 190px; border-left: solid 1px gray; border-right: solid 1px gray; }
+#topcontent { width: 49%; height: 175px; padding-top: 7px; }
+#content { height: 100%; width: 100%; }
+#leftpanel { width: 16.8%; border: solid 1px Gray; height: 545px; background: white; min-height: 100%; background-image: url("~/images/signode_logo_9.jpg"); }
+#rightpanel { width: 78.8%; height: 545px; border: solid 1px Gray; text-align: left; background: aliceblue; padding-right: 25px; margin-left: 0px; margin-right: 0px; background-image: url("~/images/treetrans_5.png"); background-repeat: no-repeat; background-position: 720px 10px; }
+#dashfooter { height: 3em; margin: -3em auto 0 auto; width: 100%; position: fixed; }
+#footer { position: fixed; z-index: 1000; background-color: RGB(17, 29, 72); height: 30px; width: 86%; margin-left: 7%; text-align: center; text-indent: 10px; font-family: Calibri; font-size: small; color: #cccccc; /*margin:0 7% 0 7%;*/ /*margin:0.1% 7% 0 7%;*/ }
+#dvcycledetails { font-size: small; }
+/*END*/
+
+#grid { width: 102.5%; height: 321px; overflow: auto; font-family: Calibri; font-size: small; }
+
+.left1 { float: left; padding-right: 3px;
+    width: 264px;
+    /*height: 25px;*/
+}
+.left { float: left; padding-right: 3px;
+    width: 264px;
+    height: 25px;
+}
+
+.right { float: right; padding-right: 15px;
+    margin-bottom: 0px;
+    height: 25px;
+}
+.rightPop { float: right; padding-right: 70px; }
+.clearfix { clear: both; }
+
+div #locations { border: solid 1px #4977AA; height: 166px; width: 300px; margin-left: 15px; background: White; overflow: auto; border-radius: 5px; }
+#dvtotalcounts { width: 397px; 
+margin-top: -169px; margin-left: 330px;
+    height: 180px;
+}
+div #TotalCounts { border: solid 1px #4977AA; height: 176px; 
+width: 250px; text-align: left; background: white; border-radius: 5px; }
+/* REPORTTESTING PAGE STYLES */
+.TotalCountsBlock { margin: 10px 50px 10px 20px; text-align: center; font-weight: bold; }
+
+/* END */
+/*Commissioning Page Styles*/
+#dvsearchoptions { width: 100%; height: 100px; margin-top: 10px; margin-left: 10px; border-radius: 5px; border: solid 1px rgb(17,29,72); font-family: Calibri; font-size: 12px; }
+
+#dvoptionone { height: 40px; width: 100%; margin-top: 20px; margin-left: 20px; }
+#dvoptiontwo { height: 40px; width: 100%; vertical-align: middle; margin-left: 20px; text-align: left; }
+#dvSearch { text-align: center; }
+#dvcrud { margin-top: 30px; margin-left: 10px; margin-right: 10px; font-family: Calibri; font-size: small; border: solid 10px lightblue; height: 150px; }
+#dvcrud-title { margin-left: 10px; margin-top: 5px; margin-right: 0px; }
+#dvcrud-add { margin-left: 20px; margin-top: 40px; }
+#dvcrud-export { margin-left: 20px; margin-top: 10px; }
+#dvGrid { width: 100%; overflow: auto; height: 420px; margin-top: 5px; margin-left: 10px; font-size: 12px; text-align: left; vertical-align: middle; border: solid 2px black; }
+#importfromexcel { width: 400px; height: 300px; }
+#dvimpprn { border: solid 1px black; border-radius: 5px; margin-top: 3px; margin-bottom: 3px; font-weight: 600; font-family: Calibri; }
+
+/*End*/
+/*IMPORT TOOL ASPX PAGE STYLES*/
+#dvimporttoolmain { width: 100%; height: 100%; }
+#dvimporttoolsubmain { margin-top: 150px; margin-left: 150px; }
+#dvtkcf { margin-top: 10px; margin-bottom: 20px; }
+#dvtkbit { margin-top: 40px; margin-left: 270px; }
+input.button:hover { background-color: RGB(17, 29, 72); color: White; font-weight: bold; }
+.dvmsg { text-indent: 400px; font-size: large; font-family: Calibri; margin-top: 30px; font-weight: bolder; width: 102.7%; }
+/*END*/
+/*INVENTORY PAGE STYLES*/
+#dvIGrid { width: 100%; overflow: auto; height: 320px; margin-top: 5px; margin-left: 10px; font-size: 12px; text-align: left; vertical-align: middle; border: solid 2px black; }
+#dvIExportExcel { margin-bottom: 5px; }
+/*END*/
+/* SMART LOCATIONS STYLES */
+#dvplantdetails { width: 100%; overflow: auto; height: 370px; margin-top: 5px; margin-left: 10px; font-size: 12px; text-align: left; vertical-align: middle; border: solid 2px black; }
+#dvsmartlocationsgridhead { font-family: Calibri; font-size: small; font-weight: bold; }
+/* END */
+/*DASHBOARD PAGE STYLES*/
+/*---------------LOGIN STYLES-------------------------*/
+#dvloginbox { margin-top: 120px; width: 400px; height: 300px; background-color: rgb(232,232,232); }
+#dvlogin { width: 180px; height: 20px; float: left; text-align: right; }
+#dvtxtlogin { width: 200px; float: right; height: 20px; text-align: left; }
+#dvpassword { width: 180px; height: 20px; float: left; text-align: right; margin-top: 15px; }
+#dvtxtpassword { width: 200px; float: right; height: 20px; text-align: left; margin-top: 15px; }
+.txtboxlogin { width: 125px; border: solid 1px black; }
+input.twitterTextbox { border: 1px solid #c4c4c4; height: 16px; font-size: 13px; padding: 4px 4px 4px 4px; border-radius: 1px; -moz-border-radius: 1px; -webkit-border-radius: 1px; box-shadow: 0px 0px 8px #d9d9d9; -moz-box-shadow: 0px 0px 8px #d9d9d9; -webkit-box-shadow: 0px 0px 8px #d9d9d9; }
+#dvloginbutton { margin-top: 35px; width: 400px; margin-left: 30px; }
+#dvloginlogo { margin-bottom: 40px; width: 400px; margin-left: 70px; }
+#dvloginlogoimage { text-align: left; margin-left: 20px; }
+.login_button { background-color: blue; border-radius: 6px; border: 1px solid #337fed; display: inline-block; color: #ffffff; font-family: Calibri; font-size: 15px; font-weight: bold; padding: 3px 9px; text-decoration: none; text-shadow: 1px 1px 0px #1570cd; }
+.login_button:hover { background-color: #3d94f6; }
+.login_button:active { position: relative; top: 1px; }
+#dvroles { width: 180px; float: left; height: 20px; text-align: right; margin-top: 15px; }
+#dvddlroles { width: 200px; float: right; height: 20px; text-align: left; margin-top: 15px; }
+.ddllogin { width: 130px !important; height: 20px !important; border: solid 1px black; }
+
+/*-------------------------------END--------------------------------------------*/
+div #dashrightlogostyles { margin-top: 20px; }
+#dashboardlogo { background-color: #B2CEFE; color: BLACK; font-family: Calibri; font-size: xx-large; height: 80px; width: 100%; vertical-align: middle; line-height: 80px; font-weight: bold; /*text-indent:280px;*/ background-image: url("../images/Signode-logo-red.png"); background-repeat: no-repeat; text-align: left; }
+#dvlogotitle { margin: 0px auto; font-size: 24px; }
+
+#dashboardcontainer { margin: 0.1% 0.1% 0.1% 0.1%; min-height: 620px; height: auto !important; border: solid 1px black; border-radius: 1px; }
+.tableStyle { text-align: center; }
+#dashboardmenu { background-color: BLACK; height: 56px; width: 100%; font-family: Calibri; font-weight: bold; font-size: small; }
+#dvbacktohomeimage { height: 50px; font-family: Calibri; font-weight: bold; font-size: small; margin-left: 20px; margin-top: 10px; margin-bottom: 2px; text-align: center; line-height: 50px; padding-top: 2px; }
+#dvmenudashboarddatetime { color: White; height: 50px; font-family: Calibri; font-weight: bold; font-size: small; width: 10%; margin-left: 10px; margin-top: 2px; margin-bottom: 2px; text-align: center; line-height: 50px; padding-top: 2px; }
+#dvtransferdetailsbind { overflow: auto; height: 450px; font-size: small;}
+#dvmnuTransfer { background-color: blue; height: 50px; font-family: Calibri; font-weight: bold; font-size: large; color: White; /*width:120px;*/ width: 10%; /*border:solid 4px white;*/ border-radius: 10px; margin-left: 30px; margin-top: 2px; margin-bottom: 2px; text-align: center; line-height: 50px; padding-top: 2px; }
+#dvmnuTransfer:hover { opacity: 1; -webkit-transform: scale(1.2); -ms-transform: scale(1.2); -moz-transform: scale(1.2); -o-transform: scale(1.2); transform: scale(1.2); border: solid 3px white; }
+#dvtransftertitle { margin-top: -13px; height: 25px; }
+#dvtransfercount { height: 25px; }
+#dvmnuInventory { background-color: green; height: 50px; font-family: Calibri; font-weight: bold; font-size: large; color: white; /*width:120px;*/ width: 10%; /*border:solid 4px white;*/ border-radius: 10px; margin-left: 10px; margin-top: 2px; margin-bottom: 2px; text-align: center; line-height: 50px; padding-top: 2px; }
+#dvmnuInventory:hover { opacity: 1; -webkit-transform: scale(1.2); -ms-transform: scale(1.2); -moz-transform: scale(1.2); -o-transform: scale(1.2); transform: scale(1.2); border: solid 3px white; }
+#dvdashboardinventorydetails { overflow: auto; height: 450px; font-size: small; }
+
+#dvAssetDetails { overflow: auto; height: 370px; font-size: small; text-align: center; }
+#dvinventorytitle { margin-top: -13px; height: 25px; }
+#dvinventorycount { height: 25px; }
+#dvmnuInTransit { background-color: #E46C0A; height: 50px; font-family: Calibri; font-weight: bold; font-size: large; color: White; /*border:solid 4px white;*/ /*width:120px;*/ width: 10%; border-radius: 10px; margin-left: 10px; margin-top: 2px; margin-bottom: 2px; text-align: center; line-height: 50px; padding-top: 2px; }
+#dvmnuInTransit:hover { opacity: 1; -webkit-transform: scale(1.2); -ms-transform: scale(1.2); -moz-transform: scale(1.2); -o-transform: scale(1.2); transform: scale(1.2); border: solid 3px white; }
+#dvtransittitle { margin-top: -13px; height: 25px; }
+#dvintransitdetailsbind { overflow: auto; height: 450px; font-size: small; }
+#dvtransitcount { height: 25px; }
+#dvmnuOverDue { background-color: #E46C0A; height: 50px; font-family: Calibri; font-weight: bold; font-size: large; /*width:120px;*/ width: 10%; color: White; /*border:solid 4px white;*/ border-radius: 10px; margin-left: 10px; margin-top: 2px; margin-bottom: 2px; text-align: center; line-height: 50px; padding-top: 2px; }
+#dvmnuOverDue:hover { opacity: 1; -webkit-transform: scale(1.2); -ms-transform: scale(1.2); -moz-transform: scale(1.2); -o-transform: scale(1.2); transform: scale(1.2); border: solid 3px white; }
+#dvoverduetitle { margin-top: -13px; height: 25px; }
+#dvoverduedetailsbind { overflow: auto; height: 450px; font-size: small; }
+#dvoverduecount { height: 25px; }
+#dvmnuMissing { background-color: Red; color: White; height: 50px; font-family: Calibri; font-weight: bold; font-size: large; /*width:120px;*/ width: 10%; /*border:solid 4px white;*/ border-radius: 10px; margin-left: 10px; margin-top: 2px; margin-bottom: 2px; text-align: center; line-height: 50px; padding-top: 2px; }
+#dvmnuMissing:hover { opacity: 1; -webkit-transform: scale(1.2); -ms-transform: scale(1.2); -moz-transform: scale(1.2); -o-transform: scale(1.2); transform: scale(1.2); border: solid 3px white; }
+#dvmissingtitle { margin-top: -13px; height: 25px; }
+#dvmissingcount { height: 25px; }
+#dvmnuException { background-color: Red; color: White; height: 50px; font-family: Calibri; font-weight: bold; font-size: large; /*width:120px;*/ width: 10%; /*border:solid 4px white;*/ border-radius: 10px; margin-left: 10px; margin-top: 2px; margin-bottom: 2px; text-align: center; line-height: 50px; padding-top: 2px; }
+#dvmnuException:hover { opacity: 1; -webkit-transform: scale(1.2); -ms-transform: scale(1.2); -moz-transform: scale(1.2); -o-transform: scale(1.2); transform: scale(1.2); border: solid 3px white; }
+#dvexceptiontitle { margin-top: -13px; height: 25px; }
+#dvexceptiondetailsbind { overflow: auto; height: 450px; font-size: small; }
+#dvexceptioncount { height: 25px; }
+#dvmnudamage { background-color: Red; color: White; height: 50px; font-family: Calibri; font-weight: bold; font-size: large; /*width:120px;*/ width: 10%; /*border:solid 3px white;*/ border-radius: 10px; margin-left: 10px; margin-top: 2px; margin-bottom: 2px; text-align: center; line-height: 50px; padding-top: 2px; }
+#dvmnudamage:hover { opacity: 1; -webkit-transform: scale(1.2); -ms-transform: scale(1.2); -moz-transform: scale(1.2); -o-transform: scale(1.2); transform: scale(1.2); border: solid 3px white; }
+#dvdamagetitle { margin-top: -13px; height: 25px; }
+#dvdamagecount { height: 25px; }
+#dvmenuuserlogout { color: White; height: 50px; font-family: Calibri; font-weight: bold; font-size: small; /*width:100px;*/ width: 10%; border-radius: 10px; margin-left: 10px; margin-top: -55px; margin-bottom: 2px; text-align: center; line-height: 50px; padding-top: 2px; }
+#dvmenuuser { color: White; font-weight: bold; font-size: small; width: 100px; height: 20px; margin-top: -10px; }
+#dvmenulogout { color: White; font-weight: bold; font-size: small; width: 100px; height: 20px; margin-top: 0px; }
+#dvdashboardgrid { width: 100%; height: 500px; overflow: auto; margin-top: 5px; font-size: small; font-family: Calibri; }
+.lbldashboard { text-align: left; margin-left: 20px; }
+#dvtimeStamp { color: White; margin-top: 18px; margin-left: 8px; width: 10%; }
+#inventorybodyleft { width: 48%; margin-bottom: 10px; margin-left: 300px; }
+#inventorybodyright { width: 20%; margin-bottom: 10px; margin-left: 300px; }
+#inventorybodyright { width: 48%; margin-bottom: 10px; }
+#dvdashsmartlocations { border-top-left-radius: 35px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; background-color: blue; color: black; font-family: Calibri; font-weight: bold; height: 40px; width: 40%; text-align: center; padding-top: 15px; margin-top: 10px; margin-left: 10px; }
+#dvdashsmartlocations1 { border-top-left-radius: 35px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; background-color: blue; color: black; font-family: Calibri; font-weight: bold; height: 40px; width: 40%; text-align: center; padding-top: 15px; margin-top: 10px; margin-left: 10px; }
+#dvdashsmartlocations2 { border-top-left-radius: 35px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; background-color: blue; color: black; font-family: Calibri; font-weight: bold; height: 40px; width: 40%; text-align: center; padding-top: 15px; margin-top: 10px; margin-left: 10px; }
+
+/*END*/
+
+/*FOR USERMASTER*/
+#dvGriduU { width: 100%; overflow: auto; height: 420px; margin-top: 5px; margin-left: 10px; font-size: 12px; text-align: left; vertical-align: middle; border: solid 2px black; }
+#dvAddUserPopUT { }
+
+#dvAddpophead { margin-left: 10%; font-weight: bolder; font-size: large; }
+.dvtopspace { margin-top: 10px; font-size: 18px; }
+.dvtopspaceBut { }
+.txtbox { width: 300px; height: 25px; border: solid 1px black; }
+.txtbox:focus { background-color: lightblue; }
+.btnbox:focus { background-color: RGB(17, 29, 72); color: White; font-weight: bold; }
+#dvAddButton { padding-top: 110px; padding-right: 20px; }
+#dvCancelButton { padding-top: 49px; }
+
+/*END*/
+/*FOR PLANT/LOCATION MASTER*/
+#dvAddButtonL { padding-top: 49px; padding-right: 20px; }
+#dvCancelButtonL { padding-top: 75px; }
+#dvAddUserPop { margin-left: 25%; margin-top: -38%; }
+#addNewCustomerFields { margin-top: -1%; margin-left: 1%; }
+#dvAddUserPopLogN { margin-left: 44%; padding-top: 1px; }
+#dvAddLocationPopLogN { margin-left: 44%; padding-top: 1px; }
+#dvAddUserPopUC { margin-left: 44%; padding-top: 1px; }
+#dvAddLocatioinPopUC { margin-left: 44%; padding-top: 1px; }
+#dvAddLocationPopCity { margin-left: 44%; padding-top: 1px; }
+#dvAddChildLocationPopCity { margin-left: 0%; padding-top: 1px; }
+#dvLocationTreeview { margin-top: 1%; border: solid 1px black; overflow: scroll; width: 20%; height: 400px; font-family: Calibri; font-size: small; }
+#dvAddLocationPop { margin-left: 25%; margin-top: -38%; display: none; }
+#dvparentlocationaddressbox { }
+#dvChildlocationsGridHead { visibility: hidden; }
+/*END*/
+
+/*TRANSACTION FORM STYLES*/
+#dvshowtransshippinggrid { margin-top: 20px; }
+#dvtransshiptopheadmsg { width: 100%; text-align: center; font-family: Calibri; font-size: medium; background-color: lightblue; margin-top: 20px; }
+/* END */
+
+/*ASSETS PAGE STYLES*/
+#dvtableheader { font-family: Calibri; font-size: small; margin-top: 10px; }
+/*END*/
+
+/*JUMBO DETAILS PAGE */
+#dvjumbogrid { overflow: scroll; width: 100%; height: 430px; margin-left: 15px; }
+#dvgridheading { font-size: large; font-weight: bold; text-align: left; vertical-align: middle; height: 40px; }
+/*END*/
+/*FOR SEARCHABLE DROPDOWNLIST IN SMARTLOCATIONS PAGE POPUP STYLES*/
+/*AutoComplete flyout */
+
+.autocomplete_completionListElement { margin: 0px !important; background-color: inherit; color: windowtext; border: buttonshadow; border-width: 1px; border-style: solid; cursor: 'default'; overflow: auto; height: 200px; font-family: Tahoma; font-size: small; text-align: left; list-style-type: none; }
+/* AutoComplete highlighted item */
+.autocomplete_highlightedListItem { background-color: #ffff99; color: black; padding: 1px; }
+/* AutoComplete item */
+.autocomplete_listItem { background-color: window; color: windowtext; padding: 1px; }
+/*-----------------------------END--------------------------------*/
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,32 @@
+                                                                      23-SEP-19 08:52:10
+                                     Balance Reels Report
+
+    Lot No   Quality 		Colour	GSM   Size      Balance Reels
+
+   1046188 WESCO PARCHMENT   		105   25.4      2,10,15,23,35
+   1046189 WESCO PARCHMENT   		105   38.1        
+   1046192 WESCO PARCHMENT   		105   51           
+   1046224 WESCO PARCHMENT   		105   38.1         
+   1046226 WESCO PARCHMENT   		105   38.1      3,6,10,13,14,28,30,33,44
+   1046228 WESCO PARCHMENT   		105   23           
+   2034498 WESCO COLOUR POSTER   BLUE	160   62    	   
+   2034499 WESCO COLOUR POSTER   BLUE	150   61.5   	   
+   3044826 WESCO INDIGO CLASSIC 	 57   68           
+   3044860 WESCO INDIGO CLASSIC 	 75   89           
+   3044861 WESCO INDIGO CLASSIC 	 70   89        98
+
+
+
+
+	INPUTS
+	======
+	1) FROM DATE
+	2) TO DATE
+
+	ABBREVIATIONS
+	=============
+
+	Balance Reels (Number of Particular child reels that are in unpacked condition)
+	
+ 
+

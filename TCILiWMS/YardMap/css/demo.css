@@ -1,0 +1,76 @@
+/* FLEX ADMIN DEMO STYLES */
+/* The following styles are used for demo purposes. */
+
+/* Organizing the Icons Page */
+
+.fa-hover {height: 45px;}
+.fa-hover:hover {font-size: 20px;}
+
+.bs-glyphicons {
+  padding-left: 0;
+  padding-bottom: 1px;
+  margin-bottom: 20px;
+  list-style: none;
+  overflow: hidden;
+}
+.bs-glyphicons li {
+  float: left;
+  width: 25%;
+  height: 115px;
+  padding: 10px;
+  margin: 0 -1px -1px 0;
+  font-size: 12px;
+  line-height: 1.4;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+.bs-glyphicons .glyphicon {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+.bs-glyphicons .glyphicon-class {
+  display: block;
+  text-align: center;
+  word-wrap: break-word; /* Help out IE10+ with class names */
+}
+.bs-glyphicons li:hover {
+  background-color: #e0e7e8;
+}
+
+@media (min-width: 768px) {
+  .bs-glyphicons li {
+    width: 12.5%;
+  }
+}
+
+/* Slider Demo Spacing */
+
+.vertical-slider-demo li {
+  margin-right: 20px;
+}
+
+/* Flot Chart Homepage Demo */
+
+.flot-dash-demo {
+  height: 200px !important;
+}
+
+.dashboard-demo-table {
+  overflow: auto;
+}
+
+/* Grid Demo */
+
+.show-grid [class^="col-"] {
+padding-top: 10px;
+padding-bottom: 10px;
+background-color: #eee;
+border: 1px solid #ddd;
+background-color: rgba(52,73,94,.15);
+border: 1px solid rgba(52,73,94,.2);
+}
+
+.show-grid {
+margin: 15px 0;
+}

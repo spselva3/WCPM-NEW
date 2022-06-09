@@ -1,0 +1,35 @@
+                                                                                   23-SEP-19 08:52:10
+                                    Packed and Balance
+
+    Lot No   Quality 		Colour	GSM   Size     Rewound  Ord Qty  Finish Qty      Pkd date      Packed  Balance
+
+   1046188 WESCO PARCHMENT   		105   25.4         36    5.0      5.4            20-SEP-19       30	  5
+   1046189 WESCO PARCHMENT   		105   38.1        119   27.5     27.5            21-SEP-19      119
+   1046192 WESCO PARCHMENT   		105   51           12    3.0      3.5            21-SEP-19       12
+   1046224 WESCO PARCHMENT   		105   38.1         53   12.0     12.3            20-SEP-19       53
+   1046226 WESCO PARCHMENT   		105   38.1         49   10.0     11.2            20-SEP-19       40	  9
+   1046228 WESCO PARCHMENT   		105   23           18    2.0      2.6            20-SEP-19       18
+   2034498 WESCO COLOUR POSTER   BLUE	160   62    	   15    4.2      4.4            22-SEP-19       15
+   2034499 WESCO COLOUR POSTER   BLUE	150   61.5   	   25    8.0      8.0            22-SEP-19       25
+   3044826 WESCO INDIGO CLASSIC 	 57   68           21    8.0      7.8            14-SEP-19       22      -1
+   3044860 WESCO INDIGO CLASSIC 	 75   89           96   50.0     49.3            21-SEP-19       96
+   3044861 WESCO INDIGO CLASSIC 	 70   89           195 100.0    100.9            20-SEP-19      185       10
+
+
+
+	INPUT
+	=====
+	1) FROM DATE
+	2) TO DATE
+
+
+	ABBREVIATIONS
+	=============
+	1) Rewound    = Number of child reels generated at Conversion
+	2) Ord Qty    = Order Quantity in Metric Tonnes
+	3) Finish Qty = Lot & Size wise Sum of net weight in Metric Tonnes
+	4) Pkd date   = Maximum date of packing
+	5) Packed     = Lot & Size wise Total number of reels
+	6) Balance    = Rewound-Packed
+ 
+

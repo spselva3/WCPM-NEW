@@ -1,0 +1,60 @@
+                  Finishing House Reel Entry Report
+
+                 Reel    Excise    No of   Gross Tare    Net    Total
+   Lot No. Size  No.     No.       reels    wt.   wt.    wt.    Net wt.
+
+Quality :WESCO INDIGO CLASSIC            DEFAULT      Gsm :57					INPUTS FOR REPORT
+   3044874 88    RE2     G286062            484  1.2    482.8					=================	
+   3044874       RE1     G286063            485  1.2    483.8					1) FROM DATE
+   3044874       RE5     G286064            541  1.2    539.8					2) TO DATE
+   3044874       RE6     G286065            530  1.2    528.8					3) FROM REEL NO.
+   3044874       RE3     G286066            465  1.2    463.8					4) TO REEL NO.
+   3044874       RE4     G286067            464  1.2    462.8					5) ORDER BY REEL SEQUENCE WISE
+   3044874       RE7     G286068            450  1.2    448.8
+   3044874       RE8     G286069            449  1.2    447.8
+   3044874       RE9     G286070            486  1.2    484.8
+   3044874       RE10    G286071            487  1.2    485.8					ABBREVIATIONS
+   3044874       RE11    G286072            419  1.2    417.8					=============
+   3044874       RE12    G286073            419  1.2    417.8					1) Reel No. ( reel no. allotted for child reels at conversion)	
+   3044874       RE13    G286074            398  1.2    396.8					2) Exicise No.( Number allotted for reels after weighing at finishing)
+   3044874       RE14    G286075    14      396  1.2    394.8   6456.2				3) No. of reels ( count for weighed reels)
+
+Quality :WESCO INDIGO CLASSIC            DEFAULT      Gsm :58
+   3044869 78    RE4     G286076            399  1.2    397.8
+   3044869       RE1     G286077            412  1.2    410.8
+   3044869       RE3     G286078            473  1.2    471.8
+   3044869       RE2     G286079            430  1.2    428.8
+   3044869       RE6     G286080            372  1.2    370.8
+   3044869       RE5     G286081            432  1.2    430.8
+   3044869       RE7     G286082            351  1.2    349.8
+   3044869       RE8     G286083     8      467  1.2    465.8   3326.4
+
+Quality :WESCO INDIGO CLASSIC            DEFAULT      Gsm :57
+   3044874 88    RE16    G286084            527  1.2    525.8
+   3044874       RE15    G286085            519  1.2    517.8
+   3044874       RE18    G286086            525  1.2    523.8
+   3044874       RE20    G286087            436  1.2    434.8
+   3044874       RE17    G286088            525  1.2    523.8
+   3044874       RE19    G286089            434  1.2    432.8
+   3044874       RE22    G286090            518  1.2    516.8
+   3044874       RE21    G286091            519  1.2    517.8
+   3044874       RE23    G286092            526  1.2    524.8
+   3044874       RE24    G286093            525  1.2    523.8
+   3044874       RE25    G286094            512  1.2    510.8
+   3044874       RE26    G286095    12      511  1.2    509.8   6062.6
+
+Quality :WESCO INDIGO CLASSIC            DEFAULT      Gsm :58
+   3044869 78    RE12    G286096            468  1.2    466.8
+   3044869       RE11    G286097            461  1.2    459.8
+   3044869       RE10    G286098            391  1.2    389.8
+   3044869       RE9     G286099            467  1.2    465.8
+   3044869       RE13    G286100            455  1.2    453.8
+   3044869       RE14    G286101            465  1.2    463.8
+   3044869       RE16    G286102            439  1.2    437.8
+   3044869       RE15    G286103     8      455  1.2    453.8   3591.4
+
+
+
+
+
+

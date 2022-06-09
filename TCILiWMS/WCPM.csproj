@@ -1,0 +1,1226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{04D630A2-9B63-4885-B6FB-29FC2E5DFC32}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WCPM</RootNamespace>
+    <AssemblyName>WCPM</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=18.1.1.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.18.1.1\lib\net40\AjaxControlToolkit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DragonFactory, Version=18148.5.28.40, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SERUM\PharmaTrac\bin\Debug\DragonFactory.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=3.0.0.2, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Serum -Pharmatrac\SERUM\PharmaTrac\bin\Debug\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.Data">
+      <HintPath>..\..\RTS_Continental_CommonSolution\C_RTS_Web\bin\Microsoft.ApplicationBlocks.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json.Net20">
+      <HintPath>..\..\License Control App\License Control App\bin\Debug\Newtonsoft.Json.Net20.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess">
+      <HintPath>..\..\..\Windows\TCILSmartForklift\TCILSmartForklift\bin\Debug\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="TraceTool">
+      <HintPath>..\..\..\Serum -Pharmatrac\SERUM\PharmaTrac\bin\Debug\TraceTool.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="frmLotReportNew.aspx" />
+    <Content Include="frmLotReport.aspx" />
+    <Content Include="frmDeleteSerailNumberNew.aspx" />
+    <Content Include="frmShiftWiseReport.aspx" />
+    <Content Include="frmTestMaster.aspx" />
+    <Content Include="frmInvetoryFinal.aspx" />
+    <Content Include="frmSeqwiseReport.aspx" />
+    <Content Include="frmLoweringOrderReport.aspx" />
+    <Content Include="frmPackedandBalanced.aspx" />
+    <Content Include="frmBalacedReels.aspx" />
+    <Content Include="frmLotWiseReport.aspx" />
+    <Content Include="frmPrefixMaster.aspx" />
+    <Content Include="frmGsmMaster.aspx" />
+    <Content Include="frmColorMaster.aspx" />
+    <Content Include="frmAddQcMaster.aspx" />
+    <Content Include="frmQualityMaster.aspx" />
+    <Content Include="frmtareWeightMaster.aspx" />
+    <Content Include="frmFinalDashBoard.aspx" />
+    <Content Include="frmInvReport.aspx" />
+    <Content Include="frmNewHistory.aspx" />
+    <Content Include="frmLotNumbers.aspx" />
+    <Content Include="frmNewInventory.aspx" />
+    <Content Include="frmReelHistory.aspx" />
+    <Content Include="frmHistory.aspx" />
+    <Content Include="frmCreateNewLines.aspx" />
+    <Content Include="frmtest123.aspx" />
+    <Content Include="frmUpdateLineDetails.aspx" />
+    <Content Include="frmLines.aspx" />
+    <Content Include="frmUpdateUser.aspx" />
+    <Content Include="frmLicenseOut.aspx" />
+    <Content Include="css\basic.css" />
+    <Content Include="css\basic_ie.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\calendar-win2k-cold-1.css" />
+    <Content Include="css\calendar.css" />
+    <Content Include="css\cms.css" />
+    <Content Include="css\cmsreport.css" />
+    <Content Include="css\confirm.css" />
+    <Content Include="css\confirm_ie.css" />
+    <Content Include="css\datatables.css" />
+    <Content Include="css\demo.css" />
+    <Content Include="css\grd_alt.png" />
+    <Content Include="css\grd_head.png" />
+    <Content Include="css\grd_pgr.png" />
+    <Content Include="css\jquery-ui-1.10.1.custom.min.css" />
+    <Content Include="css\jquery-ui-1.10.3.custom.css" />
+    <Content Include="css\jquery-ui-1.10.3.custom.min.css" />
+    <Content Include="css\jquery-ui.css" />
+    <Content Include="css\jquery.treeview.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\StyleSheet.css" />
+    <Content Include="css\validationEngine.jquery.css" />
+    <Content Include="font-awesome\css\font-awesome.css" />
+    <Content Include="font-awesome\css\font-awesome.min.css" />
+    <Content Include="font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="frmCreateNewUser.aspx" />
+    <Content Include="frmCreateNewWorkOrder.aspx" />
+    <Content Include="frmDashBoard.aspx" />
+    <Content Include="frmDashboard_New.aspx" />
+    <Content Include="frmGenerateReels.aspx" />
+    <Content Include="frmImportCsvfiles.aspx" />
+    <Content Include="frmLicenseExpired.aspx" />
+    <Content Include="frmManualOperation.aspx" />
+    <Content Include="frmProductionOrder.aspx" />
+    <Content Include="frmReelDetails.aspx" />
+    <Content Include="frmRollDetails.aspx" />
+    <Content Include="frmLogin.aspx" />
+    <Content Include="frmSessionOut.aspx" />
+    <Content Include="frmUsers.aspx" />
+    <Content Include="HtmlPage1.html" />
+    <Content Include="images\100yearslogo.png" />
+    <Content Include="images\100yearslogo1.png" />
+    <Content Include="images\100yearslogo2.png" />
+    <Content Include="images\100YEARS_ITW_med.png" />
+    <Content Include="images\100YEARS_ITW_med1.png" />
+    <Content Include="images\862833_close_512x512.png" />
+    <Content Include="images\Add.png" />
+    <Content Include="images\ajax-loader.gif" />
+    <Content Include="images\ajax-loader_whiteonblue.gif" />
+    <Content Include="images\animated-overlay.gif" />
+    <Content Include="images\BackbtnDashboard.jpg" />
+    <Content Include="images\backbutton.jpg" />
+    <Content Include="images\box.png" />
+    <Content Include="images\boxred.png" />
+    <Content Include="images\colorimage.jpg" />
+    <Content Include="images\Continental.png" />
+    <Content Include="images\Continental_Stand_Alone_Logo_gelb_sRGB.png" />
+    <Content Include="images\dashboardmnubackimage.png" />
+    <Content Include="images\date.gif" />
+    <Content Include="images\deletered.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\download icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\download.png" />
+    <Content Include="images\edit icon.png" />
+    <Content Include="images\edit.png" />
+    <Content Include="images\edit2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\editnew.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Excel.jpg" />
+    <Content Include="images\excelicon.png" />
+    <Content Include="images\file.gif" />
+    <Content Include="images\folder-closed.gif" />
+    <Content Include="images\folder.gif" />
+    <Content Include="images\free-vector-clarity-shutdown-icon_100692_Clarity_shutdown_icon.png" />
+    <Content Include="images\Icon.ico" />
+    <Content Include="images\information.png" />
+    <Content Include="images\logo100years.jpg" />
+    <Content Include="images\Mask.png" />
+    <Content Include="images\minus.gif" />
+    <Content Include="images\minus.png" />
+    <Content Include="images\mwv.png" />
+    <Content Include="images\new logo.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\new_icon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\paper reels.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\pdf.jpg" />
+    <Content Include="images\pdf.png" />
+    <Content Include="images\plus.gif" />
+    <Content Include="images\plus.png" />
+    <Content Include="images\plusblue.png" />
+    <Content Include="images\plusimage.png" />
+    <Content Include="images\print.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\printer-circle-blue-512.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\progressBar.GIF" />
+    <Content Include="images\rightarrowblue.png" />
+    <Content Include="images\s2.png" />
+    <Content Include="images\save.png" />
+    <Content Include="images\saveearth.png" />
+    <Content Include="images\saveearth_1.jpg" />
+    <Content Include="images\saveearth_2.jpg" />
+    <Content Include="images\search.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\select2-spinner.gif" />
+    <Content Include="images\select2.png" />
+    <Content Include="images\select2x2.png" />
+    <Content Include="images\serch b.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Signode-ITW.gif" />
+    <Content Include="images\Signode-logo-red.png" />
+    <Content Include="images\Signode-Logo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\signodelogo.GIF" />
+    <Content Include="images\SignodeLogo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\signodelogotrans.GIF" />
+    <Content Include="images\signode_logo.JPG" />
+    <Content Include="images\signode_logo_2.jpg" />
+    <Content Include="images\signode_logo_3.jpg" />
+    <Content Include="images\signode_logo_4.jpg" />
+    <Content Include="images\signode_logo_5.jpg" />
+    <Content Include="images\signode_logo_6.jpg" />
+    <Content Include="images\signode_logo_7.jpg" />
+    <Content Include="images\signode_logo_8.jpg" />
+    <Content Include="images\signode_logo_9.jpg" />
+    <Content Include="images\signode_logo_trans.jpg" />
+    <Content Include="images\sprite.png" />
+    <Content Include="images\Tata.png" />
+    <Content Include="images\testimage10000.png" />
+    <Content Include="images\testing.png" />
+    <Content Include="images\testing2.png" />
+    <Content Include="images\testing3.png" />
+    <Content Include="images\trash-512.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\tree.png" />
+    <Content Include="images\treetrans.png" />
+    <Content Include="images\treetrans_1.png" />
+    <Content Include="images\treetrans_3.png" />
+    <Content Include="images\treetrans_4.png" />
+    <Content Include="images\treetrans_5.png" />
+    <Content Include="images\treeview-black-line.gif" />
+    <Content Include="images\treeview-black.gif" />
+    <Content Include="images\treeview-default-line.gif" />
+    <Content Include="images\treeview-default.gif" />
+    <Content Include="images\treeview-famfamfam-line.gif" />
+    <Content Include="images\treeview-famfamfam.gif" />
+    <Content Include="images\treeview-gray-line.gif" />
+    <Content Include="images\treeview-gray.gif" />
+    <Content Include="images\treeview-red-line.gif" />
+    <Content Include="images\treeview-red.gif" />
+    <Content Include="images\wesco-main-logo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\x.png" />
+    <Content Include="javascriptNew\actb.js" />
+    <Content Include="javascriptNew\AjaxCallBack.js" />
+    <Content Include="javascriptNew\autocomplete.js" />
+    <Content Include="javascriptNew\basic.js" />
+    <Content Include="javascriptNew\bootstrap.min.js" />
+    <Content Include="javascriptNew\calendar-en.js" />
+    <Content Include="javascriptNew\calendar-setup.js" />
+    <Content Include="javascriptNew\calendar-setup_stripped.js" />
+    <Content Include="javascriptNew\calendar.js" />
+    <Content Include="javascriptNew\calendar_stripped.js" />
+    <Content Include="javascriptNew\Calender_Impl.js" />
+    <Content Include="javascriptNew\common.js" />
+    <Content Include="javascriptNew\datatables-bs3.js" />
+    <Content Include="javascriptNew\DeepASPImpromptuCalling.js" />
+    <Content Include="javascriptNew\demo.js" />
+    <Content Include="javascriptNew\jquery-1.2.6.min.js" />
+    <Content Include="javascriptNew\jquery-1.3.2-vsdoc2.js" />
+    <Content Include="javascriptNew\jquery-1.3.2.js" />
+    <Content Include="javascriptNew\jquery-1.4.2.min.js" />
+    <Content Include="javascriptNew\jquery-1.6.min.js" />
+    <Content Include="javascriptNew\jquery-1.8.2.min.js" />
+    <Content Include="javascriptNew\jquery-1.9.1.js" />
+    <Content Include="javascriptNew\jquery-1.9.1.min.js" />
+    <Content Include="javascriptNew\Jquery-Impromptu.3.3.js" />
+    <Content Include="javascriptNew\jquery-migrate-1.2.1.js" />
+    <Content Include="javascriptNew\jquery-ui-1.10.1.custom.js" />
+    <Content Include="javascriptNew\jquery-ui-1.10.1.custom.min.js" />
+    <Content Include="javascriptNew\jquery-ui-1.8.14.custom.min.js" />
+    <Content Include="javascriptNew\jquery-ui.js" />
+    <Content Include="javascriptNew\jquery.autocomplete.js" />
+    <Content Include="javascriptNew\jquery.dataTables.js" />
+    <Content Include="javascriptNew\jquery.helper.js" />
+    <Content Include="javascriptNew\jquery.js" />
+    <Content Include="javascriptNew\jquery.mockjax.js" />
+    <Content Include="javascriptNew\jquery.simplemodal-1.1.1.js" />
+    <Content Include="javascriptNew\jquery.simplemodal.js" />
+    <Content Include="javascriptNew\jquery.treeview.js" />
+    <Content Include="javascriptNew\jquery.validate.js" />
+    <Content Include="javascriptNew\jquery.validationEngine-en.js" />
+    <Content Include="javascriptNew\jquery.validationEngine.js" />
+    <Content Include="javascriptNew\jquery1.6.4.min.js" />
+    <Content Include="javascriptNew\jquery1.9.1.min.js" />
+    <Content Include="javascriptNew\jqueryevents.js" />
+    <Content Include="javascriptNew\lib\jquery.cookie.js" />
+    <Content Include="javascriptNew\lib\jquery.js" />
+    <Content Include="javascriptNew\Maskdiv.js" />
+    <Content Include="javascriptNew\progressbar.js" />
+    <Content Include="javascript\actb.js" />
+    <Content Include="javascript\AjaxCallBack.js" />
+    <Content Include="javascript\autocomplete.js" />
+    <Content Include="javascript\basic.js" />
+    <Content Include="javascript\bootstrap.min.js" />
+    <Content Include="javascript\calendar-en.js" />
+    <Content Include="javascript\calendar-setup.js" />
+    <Content Include="javascript\calendar-setup_stripped.js" />
+    <Content Include="javascript\calendar.js" />
+    <Content Include="javascript\calendar_stripped.js" />
+    <Content Include="javascript\Calender_Impl.js" />
+    <Content Include="javascript\common.js" />
+    <Content Include="javascript\datatables-bs3.js" />
+    <Content Include="javascript\DeepASPImpromptuCalling.js" />
+    <Content Include="javascript\demo.js" />
+    <Content Include="javascript\jquery-1.2.6.min.js" />
+    <Content Include="javascript\jquery-1.3.2-vsdoc2.js" />
+    <Content Include="javascript\jquery-1.3.2.js" />
+    <Content Include="javascript\jquery-1.4.2.min.js" />
+    <Content Include="javascript\jquery-1.6.min.js" />
+    <Content Include="javascript\jquery-1.8.2.min.js" />
+    <Content Include="javascript\jquery-1.9.1.js" />
+    <Content Include="javascript\jquery-1.9.1.min.js" />
+    <Content Include="javascript\Jquery-Impromptu.3.3.js" />
+    <Content Include="javascript\jquery-migrate-1.2.1.js" />
+    <Content Include="javascript\jquery-ui-1.10.1.custom.js" />
+    <Content Include="javascript\jquery-ui-1.10.1.custom.min.js" />
+    <Content Include="javascript\jquery-ui-1.8.14.custom.min.js" />
+    <Content Include="javascript\jquery-ui.js" />
+    <Content Include="javascript\jquery.autocomplete.js" />
+    <Content Include="javascript\jquery.dataTables.js" />
+    <Content Include="javascript\jquery.dataTables.min.js" />
+    <Content Include="javascript\jquery.helper.js" />
+    <Content Include="javascript\jquery.js" />
+    <Content Include="javascript\jquery.mockjax.js" />
+    <Content Include="javascript\jquery.simplemodal-1.1.1.js" />
+    <Content Include="javascript\jquery.simplemodal.js" />
+    <Content Include="javascript\jquery.treeview.js" />
+    <Content Include="javascript\jquery.validate.js" />
+    <Content Include="javascript\jquery.validationEngine-en.js" />
+    <Content Include="javascript\jquery.validationEngine.js" />
+    <Content Include="javascript\jquery1.6.4.min.js" />
+    <Content Include="javascript\jquery1.9.1.min.js" />
+    <Content Include="javascript\jqueryevents.js" />
+    <Content Include="javascript\lib\jquery.cookie.js" />
+    <Content Include="javascript\lib\jquery.js" />
+    <Content Include="javascript\Maskdiv.js" />
+    <Content Include="javascript\progressbar.js" />
+    <Content Include="Login Form.css" />
+    <Content Include="newJS\advanced-form-demo.js" />
+    <Content Include="newJS\affix.js" />
+    <Content Include="newJS\bootstrap-datepicker.js" />
+    <Content Include="newJS\bootstrap-maxlength.js" />
+    <Content Include="newJS\bootstrap-timepicker.min.js" />
+    <Content Include="newJS\bootstrap-tokenfield.min.js" />
+    <Content Include="newJS\bootstrap.min.js" />
+    <Content Include="newJS\dashboard-demo.js" />
+    <Content Include="newJS\datatables-bs3.js" />
+    <Content Include="newJS\daterangepicker.js" />
+    <Content Include="newJS\defaults.js" />
+    <Content Include="newJS\flex.js" />
+    <Content Include="newJS\ga.js" />
+    <Content Include="newJS\hisrc.js" />
+    <Content Include="newJS\jquery-1.8.3.min.js" />
+    <Content Include="newJS\jquery-ui.js" />
+    <Content Include="newJS\jquery.dataTables.js" />
+    <Content Include="newJS\jquery.easypiechart.min.js" />
+    <Content Include="newJS\jquery.flot.js" />
+    <Content Include="newJS\jquery.flot.resize.js" />
+    <Content Include="newJS\jquery.js" />
+    <Content Include="newJS\jquery.min.js" />
+    <Content Include="newJS\jquery.slimscroll.min.js" />
+    <Content Include="newJS\jquery.sparkline.min.js" />
+    <Content Include="newJS\jquery.validate.min.js" />
+    <Content Include="newJS\messenger-theme-flat.js" />
+    <Content Include="newJS\messenger.min.js" />
+    <Content Include="newJS\moment.js" />
+    <Content Include="newJS\morris.js" />
+    <Content Include="newJS\pace.js" />
+    <Content Include="newJS\raphael-2.1.0.min.js" />
+    <Content Include="newJS\scrollspy.js" />
+    <Content Include="newJS\Slides\jquery.easing.min.js" />
+    <Content Include="newJS\Slides\jquery.easy-ticker.min.js" />
+    <Content Include="newJS\Slides\jquery.min.js" />
+    <Content Include="newJS\typeahead.min.js" />
+    <Content Include="newJS\validation-demo.js" />
+    <Content Include="new\bootstrap-social.css" />
+    <Content Include="new\bootstrap-tokenfield.css" />
+    <Content Include="new\bootstrap.min.css" />
+    <Content Include="new\css-fonts.css" />
+    <Content Include="new\css-fonts1.css" />
+    <Content Include="new\datatables.css" />
+    <Content Include="new\datepicker3.css" />
+    <Content Include="new\daterangepicker-bs3.css" />
+    <Content Include="new\demo.css" />
+    <Content Include="new\demo_page.css" />
+    <Content Include="new\font-awesome.css" />
+    <Content Include="new\font-awesome.min.css" />
+    <Content Include="new\jquery-ui.css" />
+    <Content Include="new\jquery.dataTables.css" />
+    <Content Include="new\messenger-theme-flat.css" />
+    <Content Include="new\messenger.css" />
+    <Content Include="new\morris.css" />
+    <Content Include="new\pace.css" />
+    <Content Include="new\plugins.css" />
+    <Content Include="new\redCalender.css" />
+    <Content Include="new\screen_preview.css" />
+    <Content Include="new\style.css" />
+    <Content Include="new\tokenfield-typeahead.css" />
+    <Content Include="new_icon.ico" />
+    <Content Include="PRINTTEST_NEW.aspx" />
+    <Content Include="ReplaceChildReels.aspx" />
+    <Content Include="ReplaceReels.aspx" />
+    <Content Include="Scripts\angular.js" />
+    <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\angular.min.js.map" />
+    <Content Include="packages.config" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <None Include="Properties\PublishProfiles\WCPM Publish.pubxml" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\esm\popper-utils.js" />
+    <Content Include="Scripts\esm\popper-utils.min.js" />
+    <Content Include="Scripts\esm\popper-utils.min.js.map" />
+    <Content Include="Scripts\esm\popper-utils.js.map" />
+    <Content Include="Scripts\esm\popper.js" />
+    <Content Include="Scripts\esm\popper.min.js" />
+    <Content Include="Scripts\esm\popper.min.js.map" />
+    <Content Include="Scripts\esm\popper.js.map" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="Scripts\angular-mocks.js" />
+    <Content Include="Scripts\index.d.ts" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
+    <Content Include="Scripts\jquery-3.0.0.js" />
+    <Content Include="Scripts\jquery-3.0.0.min.js" />
+    <Content Include="Scripts\jquery-3.0.0.slim.js" />
+    <Content Include="Scripts\jquery-3.0.0.slim.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
+    <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="Scripts\popper-utils.js" />
+    <Content Include="Scripts\popper-utils.min.js" />
+    <Content Include="Scripts\popper.js" />
+    <Content Include="Scripts\popper.min.js" />
+    <Content Include="Scripts\umd\popper-utils.js" />
+    <Content Include="Scripts\umd\popper-utils.min.js" />
+    <Content Include="Scripts\umd\popper.js" />
+    <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Session\css\bootstrap-theme.css" />
+    <Content Include="Session\css\bootstrap.min.css" />
+    <Content Include="Session\css\elegant-icons-style.css" />
+    <Content Include="Session\css\font-awesome.css" />
+    <Content Include="Session\css\font-awesome.min.css" />
+    <Content Include="Session\css\fullcalendar.css" />
+    <Content Include="Session\css\jquery-jvectormap-1.2.2.css" />
+    <Content Include="Session\css\jquery-ui-1.10.4.min.css" />
+    <Content Include="Session\css\line-icons.css" />
+    <Content Include="Session\css\owl.carousel.css" />
+    <Content Include="Session\css\style-responsive.css" />
+    <Content Include="Session\css\style.css" />
+    <Content Include="Session\css\widgets.css" />
+    <Content Include="Session\css\xcharts.min.css" />
+    <Content Include="Styles\all.css" />
+    <Content Include="Styles\animate.css" />
+    <Content Include="Styles\bootstrap.min.css" />
+    <Content Include="Styles\flat\aero%402x.png" />
+    <Content Include="Styles\flat\aero.css" />
+    <Content Include="Styles\flat\aero.png" />
+    <Content Include="Styles\flat\all.css" />
+    <Content Include="Styles\flat\blue%402x.png" />
+    <Content Include="Styles\flat\blue.css" />
+    <Content Include="Styles\flat\blue.png" />
+    <Content Include="Styles\flat\flat%402x.png" />
+    <Content Include="Styles\flat\flat.css" />
+    <Content Include="Styles\flat\flat.png" />
+    <Content Include="Styles\flat\green%402x.png" />
+    <Content Include="Styles\flat\green.css" />
+    <Content Include="Styles\flat\green.png" />
+    <Content Include="Styles\flat\grey%402x.png" />
+    <Content Include="Styles\flat\grey.css" />
+    <Content Include="Styles\flat\grey.png" />
+    <Content Include="Styles\flat\orange%402x.png" />
+    <Content Include="Styles\flat\orange.css" />
+    <Content Include="Styles\flat\orange.png" />
+    <Content Include="Styles\flat\pink%402x.png" />
+    <Content Include="Styles\flat\pink.css" />
+    <Content Include="Styles\flat\pink.png" />
+    <Content Include="Styles\flat\purple%402x.png" />
+    <Content Include="Styles\flat\purple.css" />
+    <Content Include="Styles\flat\purple.png" />
+    <Content Include="Styles\flat\red%402x.png" />
+    <Content Include="Styles\flat\red.css" />
+    <Content Include="Styles\flat\red.png" />
+    <Content Include="Styles\flat\yellow%402x.png" />
+    <Content Include="Styles\flat\yellow.css" />
+    <Content Include="Styles\flat\yellow.png" />
+    <Content Include="Styles\font-awesome.min.css" />
+    <Content Include="Styles\futurico\futurico%402x.png" />
+    <Content Include="Styles\futurico\futurico.css" />
+    <Content Include="Styles\futurico\futurico.png" />
+    <Content Include="Styles\introjs.css" />
+    <Content Include="Styles\jplist-custom.css" />
+    <Content Include="Styles\jquery-ui-1.10.4.custom.min.css" />
+    <Content Include="Styles\jquery.news-ticker.css" />
+    <Content Include="Styles\line\aero.css" />
+    <Content Include="Styles\line\all.css" />
+    <Content Include="Styles\line\blue.css" />
+    <Content Include="Styles\line\green.css" />
+    <Content Include="Styles\line\grey.css" />
+    <Content Include="Styles\line\line%402x.png" />
+    <Content Include="Styles\line\line.css" />
+    <Content Include="Styles\line\line.png" />
+    <Content Include="Styles\line\orange.css" />
+    <Content Include="Styles\line\pink.css" />
+    <Content Include="Styles\line\purple.css" />
+    <Content Include="Styles\line\red.css" />
+    <Content Include="Styles\line\yellow.css" />
+    <Content Include="Styles\main.css" />
+    <Content Include="Styles\minimal\aero%402x.png" />
+    <Content Include="Styles\minimal\aero.css" />
+    <Content Include="Styles\minimal\aero.png" />
+    <Content Include="Styles\minimal\all.css" />
+    <Content Include="Styles\minimal\blue%402x.png" />
+    <Content Include="Styles\minimal\blue.css" />
+    <Content Include="Styles\minimal\blue.png" />
+    <Content Include="Styles\minimal\green%402x.png" />
+    <Content Include="Styles\minimal\green.css" />
+    <Content Include="Styles\minimal\green.png" />
+    <Content Include="Styles\minimal\grey%402x.png" />
+    <Content Include="Styles\minimal\grey.css" />
+    <Content Include="Styles\minimal\grey.png" />
+    <Content Include="Styles\minimal\minimal%402x.png" />
+    <Content Include="Styles\minimal\minimal.css" />
+    <Content Include="Styles\minimal\minimal.png" />
+    <Content Include="Styles\minimal\orange%402x.png" />
+    <Content Include="Styles\minimal\orange.css" />
+    <Content Include="Styles\minimal\orange.png" />
+    <Content Include="Styles\minimal\pink%402x.png" />
+    <Content Include="Styles\minimal\pink.css" />
+    <Content Include="Styles\minimal\pink.png" />
+    <Content Include="Styles\minimal\purple%402x.png" />
+    <Content Include="Styles\minimal\purple.css" />
+    <Content Include="Styles\minimal\purple.png" />
+    <Content Include="Styles\minimal\red%402x.png" />
+    <Content Include="Styles\minimal\red.css" />
+    <Content Include="Styles\minimal\red.png" />
+    <Content Include="Styles\minimal\yellow%402x.png" />
+    <Content Include="Styles\minimal\yellow.css" />
+    <Content Include="Styles\minimal\yellow.png" />
+    <Content Include="Styles\mystyle.css" />
+    <Content Include="Styles\nestable.css" />
+    <Content Include="Styles\pace.css" />
+    <Content Include="Styles\polaris\polaris%402x.png" />
+    <Content Include="Styles\polaris\polaris.css" />
+    <Content Include="Styles\polaris\polaris.png" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Styles\square\aero%402x.png" />
+    <Content Include="Styles\square\aero.css" />
+    <Content Include="Styles\square\aero.png" />
+    <Content Include="Styles\square\all.css" />
+    <Content Include="Styles\square\blue%402x.png" />
+    <Content Include="Styles\square\blue.css" />
+    <Content Include="Styles\square\blue.png" />
+    <Content Include="Styles\square\green%402x.png" />
+    <Content Include="Styles\square\green.css" />
+    <Content Include="Styles\square\green.png" />
+    <Content Include="Styles\square\grey%402x.png" />
+    <Content Include="Styles\square\grey.css" />
+    <Content Include="Styles\square\grey.png" />
+    <Content Include="Styles\square\orange%402x.png" />
+    <Content Include="Styles\square\orange.css" />
+    <Content Include="Styles\square\orange.png" />
+    <Content Include="Styles\square\pink%402x.png" />
+    <Content Include="Styles\square\pink.css" />
+    <Content Include="Styles\square\pink.png" />
+    <Content Include="Styles\square\purple%402x.png" />
+    <Content Include="Styles\square\purple.css" />
+    <Content Include="Styles\square\purple.png" />
+    <Content Include="Styles\square\red%402x.png" />
+    <Content Include="Styles\square\red.css" />
+    <Content Include="Styles\square\red.png" />
+    <Content Include="Styles\square\square%402x.png" />
+    <Content Include="Styles\square\square.css" />
+    <Content Include="Styles\square\square.png" />
+    <Content Include="Styles\square\yellow%402x.png" />
+    <Content Include="Styles\square\yellow.css" />
+    <Content Include="Styles\square\yellow.png" />
+    <Content Include="Styles\style-responsive.css" />
+    <Content Include="Styles\udf\custom\custom.css" />
+    <Content Include="Styles\udf\plain\icon.gif" />
+    <Content Include="Styles\udf\plain\plain.css" />
+    <Content Include="Styles\udf\plain\text-bg.gif" />
+    <Content Include="Styles\udf\sexy\icon.gif" />
+    <Content Include="Styles\udf\sexy\sexy.css" />
+    <Content Include="Styles\udf\sexy\text-bg.gif" />
+    <Content Include="Styles\udf\ufd-base.css" />
+    <Content Include="Styles\udf\uiCss\uiCss.css" />
+    <Content Include="Styles\zabuto_calendar.min.css" />
+    <Content Include="test form.aspx" />
+    <Content Include="Test styles\global.js" />
+    <Content Include="Test styles\main.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Test styles\main.min.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebForm1.aspx" />
+    <Content Include="YardMap\css\bootstrap-tokenfield.css" />
+    <Content Include="YardMap\css\bootstrap.min.css" />
+    <Content Include="YardMap\css\css-fonts.css" />
+    <Content Include="YardMap\css\css-fonts1.css" />
+    <Content Include="YardMap\css\datatables.css" />
+    <Content Include="YardMap\css\datepicker3.css" />
+    <Content Include="YardMap\css\daterangepicker-bs3.css" />
+    <Content Include="YardMap\css\demo.css" />
+    <Content Include="YardMap\css\demo_page.css" />
+    <Content Include="YardMap\css\font-awesome.css" />
+    <Content Include="YardMap\css\font-awesome.min.css" />
+    <Content Include="YardMap\css\jquery-ui.css" />
+    <Content Include="YardMap\css\jquery.dataTables.css" />
+    <Content Include="YardMap\css\messenger-theme-flat.css" />
+    <Content Include="YardMap\css\messenger.css" />
+    <Content Include="YardMap\css\morris.css" />
+    <Content Include="YardMap\css\plugins.css" />
+    <Content Include="YardMap\css\style.css" />
+    <Content Include="YardMap\css\tokenfield-typeahead.css" />
+    <Content Include="YardMap\font-awesome\css\font-awesome.css" />
+    <Content Include="YardMap\font-awesome\css\font-awesome.min.css" />
+    <Content Include="YardMap\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="YardMap\Javascript\affix.js" />
+    <Content Include="YardMap\Javascript\bootstrap-datepicker.js" />
+    <Content Include="YardMap\Javascript\bootstrap-maxlength.js" />
+    <Content Include="YardMap\Javascript\bootstrap-timepicker.min.js" />
+    <Content Include="YardMap\Javascript\bootstrap-tokenfield.min.js" />
+    <Content Include="YardMap\Javascript\bootstrap.min.js" />
+    <Content Include="YardMap\Javascript\dashboard-demo.js" />
+    <Content Include="YardMap\Javascript\datatables-bs3.js" />
+    <Content Include="YardMap\Javascript\daterangepicker.js" />
+    <Content Include="YardMap\Javascript\flex.js" />
+    <Content Include="YardMap\Javascript\jquery-ui.js" />
+    <Content Include="YardMap\Javascript\jquery.dataTables.js" />
+    <Content Include="YardMap\Javascript\jquery.flot.js" />
+    <Content Include="YardMap\Javascript\jquery.flot.resize.js" />
+    <Content Include="YardMap\Javascript\jquery.js" />
+    <Content Include="YardMap\Javascript\jquery.min.js" />
+    <Content Include="YardMap\Javascript\jquery.slimscroll.min.js" />
+    <Content Include="YardMap\Javascript\jquery.sparkline.min.js" />
+    <Content Include="YardMap\Javascript\messenger-theme-flat.js" />
+    <Content Include="YardMap\Javascript\messenger.min.js" />
+    <Content Include="YardMap\Javascript\moment.js" />
+    <Content Include="YardMap\Javascript\morris-demo-data.js" />
+    <Content Include="YardMap\Javascript\morris.js" />
+    <Content Include="YardMap\Javascript\Notifications.js" />
+    <Content Include="YardMap\Javascript\raphael-2.1.0.min.js" />
+    <Content Include="YardMap\Javascript\scrollspy.js" />
+    <Content Include="YardMap\Javascript\typeahead.min.js" />
+    <Content Include="_assets\css\confirm.css" />
+    <Content Include="_assets\css\confirm_ie.css" />
+    <Content Include="_assets\css\StyleSheet.css" />
+    <Content Include="_assets\img\delete.png" />
+    <Content Include="_assets\img\information.png" />
+    <Content Include="_assets\img\plus.png" />
+    <Content Include="_assets\img\sprite.png" />
+    <Content Include="_assets\img\x.png" />
+    <Content Include="_assets\js\jquery-1.2.6.min.js" />
+    <Content Include="_assets\js\jquery.simplemodal-1.1.1.js" />
+    <Content Include="YardMap\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="YardMap\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="YardMap\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="YardMap\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="YardMap\font-awesome\less\bordered-pulled.less" />
+    <Content Include="YardMap\font-awesome\less\core.less" />
+    <Content Include="YardMap\font-awesome\less\fixed-width.less" />
+    <Content Include="YardMap\font-awesome\less\font-awesome.less" />
+    <Content Include="YardMap\font-awesome\less\icons.less" />
+    <Content Include="YardMap\font-awesome\less\larger.less" />
+    <Content Include="YardMap\font-awesome\less\list.less" />
+    <Content Include="YardMap\font-awesome\less\mixins.less" />
+    <Content Include="YardMap\font-awesome\less\path.less" />
+    <Content Include="YardMap\font-awesome\less\rotated-flipped.less" />
+    <Content Include="YardMap\font-awesome\less\spinning.less" />
+    <Content Include="YardMap\font-awesome\less\stacked.less" />
+    <Content Include="YardMap\font-awesome\less\variables.less" />
+    <Content Include="YardMap\font-awesome\scss\font-awesome.scss" />
+    <Content Include="YardMap\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="YardMap\font-awesome\scss\_core.scss" />
+    <Content Include="YardMap\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="YardMap\font-awesome\scss\_icons.scss" />
+    <Content Include="YardMap\font-awesome\scss\_larger.scss" />
+    <Content Include="YardMap\font-awesome\scss\_list.scss" />
+    <Content Include="YardMap\font-awesome\scss\_mixins.scss" />
+    <Content Include="YardMap\font-awesome\scss\_path.scss" />
+    <Content Include="YardMap\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="YardMap\font-awesome\scss\_spinning.scss" />
+    <Content Include="YardMap\font-awesome\scss\_stacked.scss" />
+    <Content Include="YardMap\font-awesome\scss\_variables.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Class2.cs" />
+    <Compile Include="Class3.cs" />
+    <Compile Include="clsbusiness.cs" />
+    <Compile Include="CLSDB.cs" />
+    <Compile Include="clsExcel.cs" />
+    <Compile Include="clsHsitory.cs" />
+    <Compile Include="clsJson.cs" />
+    <Compile Include="frmLotReportNew.aspx.cs">
+      <DependentUpon>frmLotReportNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmLotReportNew.aspx.designer.cs">
+      <DependentUpon>frmLotReportNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmLotReport.aspx.cs">
+      <DependentUpon>frmLotReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmLotReport.aspx.designer.cs">
+      <DependentUpon>frmLotReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeleteSerailNumberNew.aspx.cs">
+      <DependentUpon>frmDeleteSerailNumberNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDeleteSerailNumberNew.aspx.designer.cs">
+      <DependentUpon>frmDeleteSerailNumberNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmShiftWiseReport.aspx.cs">
+      <DependentUpon>frmShiftWiseReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmShiftWiseReport.aspx.designer.cs">
+      <DependentUpon>frmShiftWiseReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmTestMaster.aspx.cs">
+      <DependentUpon>frmTestMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmTestMaster.aspx.designer.cs">
+      <DependentUpon>frmTestMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvetoryFinal.aspx.cs">
+      <DependentUpon>frmInvetoryFinal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmInvetoryFinal.aspx.designer.cs">
+      <DependentUpon>frmInvetoryFinal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSeqwiseReport.aspx.cs">
+      <DependentUpon>frmSeqwiseReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSeqwiseReport.aspx.designer.cs">
+      <DependentUpon>frmSeqwiseReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoweringOrderReport.aspx.cs">
+      <DependentUpon>frmLoweringOrderReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmLoweringOrderReport.aspx.designer.cs">
+      <DependentUpon>frmLoweringOrderReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPackedandBalanced.aspx.cs">
+      <DependentUpon>frmPackedandBalanced.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPackedandBalanced.aspx.designer.cs">
+      <DependentUpon>frmPackedandBalanced.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmBalacedReels.aspx.cs">
+      <DependentUpon>frmBalacedReels.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmBalacedReels.aspx.designer.cs">
+      <DependentUpon>frmBalacedReels.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmLotWiseReport.aspx.cs">
+      <DependentUpon>frmLotWiseReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmLotWiseReport.aspx.designer.cs">
+      <DependentUpon>frmLotWiseReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrefixMaster.aspx.cs">
+      <DependentUpon>frmPrefixMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPrefixMaster.aspx.designer.cs">
+      <DependentUpon>frmPrefixMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmGsmMaster.aspx.cs">
+      <DependentUpon>frmGsmMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmGsmMaster.aspx.designer.cs">
+      <DependentUpon>frmGsmMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmColorMaster.aspx.cs">
+      <DependentUpon>frmColorMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmColorMaster.aspx.designer.cs">
+      <DependentUpon>frmColorMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddQcMaster.aspx.cs">
+      <DependentUpon>frmAddQcMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAddQcMaster.aspx.designer.cs">
+      <DependentUpon>frmAddQcMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmQualityMaster.aspx.cs">
+      <DependentUpon>frmQualityMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmQualityMaster.aspx.designer.cs">
+      <DependentUpon>frmQualityMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmtareWeightMaster.aspx.cs">
+      <DependentUpon>frmtareWeightMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmtareWeightMaster.aspx.designer.cs">
+      <DependentUpon>frmtareWeightMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmFinalDashBoard.aspx.cs">
+      <DependentUpon>frmFinalDashBoard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmFinalDashBoard.aspx.designer.cs">
+      <DependentUpon>frmFinalDashBoard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvReport.aspx.cs">
+      <DependentUpon>frmInvReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmInvReport.aspx.designer.cs">
+      <DependentUpon>frmInvReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewHistory.aspx.cs">
+      <DependentUpon>frmNewHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmNewHistory.aspx.designer.cs">
+      <DependentUpon>frmNewHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmLotNumbers.aspx.cs">
+      <DependentUpon>frmLotNumbers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmLotNumbers.aspx.designer.cs">
+      <DependentUpon>frmLotNumbers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewInventory.aspx.cs">
+      <DependentUpon>frmNewInventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmNewInventory.aspx.designer.cs">
+      <DependentUpon>frmNewInventory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmReelHistory.aspx.cs">
+      <DependentUpon>frmReelHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmReelHistory.aspx.designer.cs">
+      <DependentUpon>frmReelHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmHistory.aspx.cs">
+      <DependentUpon>frmHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmHistory.aspx.designer.cs">
+      <DependentUpon>frmHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreateNewLines.aspx.cs">
+      <DependentUpon>frmCreateNewLines.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCreateNewLines.aspx.designer.cs">
+      <DependentUpon>frmCreateNewLines.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmtest123.aspx.cs">
+      <DependentUpon>frmtest123.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmtest123.aspx.designer.cs">
+      <DependentUpon>frmtest123.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateLineDetails.aspx.cs">
+      <DependentUpon>frmUpdateLineDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmUpdateLineDetails.aspx.designer.cs">
+      <DependentUpon>frmUpdateLineDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmLines.aspx.cs">
+      <DependentUpon>frmLines.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmLines.aspx.designer.cs">
+      <DependentUpon>frmLines.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateUser.aspx.cs">
+      <DependentUpon>frmUpdateUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmUpdateUser.aspx.designer.cs">
+      <DependentUpon>frmUpdateUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmLicenseOut.aspx.cs">
+      <DependentUpon>frmLicenseOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmLicenseOut.aspx.designer.cs">
+      <DependentUpon>frmLicenseOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreateNewUser.aspx.cs">
+      <DependentUpon>frmCreateNewUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCreateNewUser.aspx.designer.cs">
+      <DependentUpon>frmCreateNewUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreateNewWorkOrder.aspx.cs">
+      <DependentUpon>frmCreateNewWorkOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCreateNewWorkOrder.aspx.designer.cs">
+      <DependentUpon>frmCreateNewWorkOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDashBoard.aspx.cs">
+      <DependentUpon>frmDashBoard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDashBoard.aspx.designer.cs">
+      <DependentUpon>frmDashBoard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDashboard_New.aspx.cs">
+      <DependentUpon>frmDashboard_New.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDashboard_New.aspx.designer.cs">
+      <DependentUpon>frmDashboard_New.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmGenerateReels.aspx.cs">
+      <DependentUpon>frmGenerateReels.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmGenerateReels.aspx.designer.cs">
+      <DependentUpon>frmGenerateReels.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmImportCsvfiles.aspx.cs">
+      <DependentUpon>frmImportCsvfiles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmImportCsvfiles.aspx.designer.cs">
+      <DependentUpon>frmImportCsvfiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmLicenseExpired.aspx.cs">
+      <DependentUpon>frmLicenseExpired.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmLicenseExpired.aspx.designer.cs">
+      <DependentUpon>frmLicenseExpired.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmManualOperation.aspx.cs">
+      <DependentUpon>frmManualOperation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmManualOperation.aspx.designer.cs">
+      <DependentUpon>frmManualOperation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductionOrder.aspx.cs">
+      <DependentUpon>frmProductionOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmProductionOrder.aspx.designer.cs">
+      <DependentUpon>frmProductionOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmReelDetails.aspx.cs">
+      <DependentUpon>frmReelDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmReelDetails.aspx.designer.cs">
+      <DependentUpon>frmReelDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmRollDetails.aspx.cs">
+      <DependentUpon>frmRollDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmRollDetails.aspx.designer.cs">
+      <DependentUpon>frmRollDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.aspx.cs">
+      <DependentUpon>frmLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmLogin.aspx.designer.cs">
+      <DependentUpon>frmLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSessionOut.aspx.cs">
+      <DependentUpon>frmSessionOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSessionOut.aspx.designer.cs">
+      <DependentUpon>frmSessionOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsers.aspx.cs">
+      <DependentUpon>frmUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmUsers.aspx.designer.cs">
+      <DependentUpon>frmUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master.Master.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master.Master.designer.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="OracleDBLayer.cs" />
+    <Compile Include="PlantMaster.cs" />
+    <Compile Include="PRINTTEST_NEW.aspx.cs">
+      <DependentUpon>PRINTTEST_NEW.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PRINTTEST_NEW.aspx.designer.cs">
+      <DependentUpon>PRINTTEST_NEW.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReplaceChildReels.aspx.cs">
+      <DependentUpon>ReplaceChildReels.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReplaceChildReels.aspx.designer.cs">
+      <DependentUpon>ReplaceChildReels.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReplaceReels.aspx.cs">
+      <DependentUpon>ReplaceReels.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReplaceReels.aspx.designer.cs">
+      <DependentUpon>ReplaceReels.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="test form.aspx.cs">
+      <DependentUpon>test form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test form.aspx.designer.cs">
+      <DependentUpon>test form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Master.Master" />
+    <Content Include="font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="font-awesome\less\bordered-pulled.less" />
+    <Content Include="font-awesome\less\core.less" />
+    <Content Include="font-awesome\less\fixed-width.less" />
+    <Content Include="font-awesome\less\font-awesome.less" />
+    <Content Include="font-awesome\less\icons.less" />
+    <Content Include="font-awesome\less\larger.less" />
+    <Content Include="font-awesome\less\list.less" />
+    <Content Include="font-awesome\less\mixins.less" />
+    <Content Include="font-awesome\less\path.less" />
+    <Content Include="font-awesome\less\rotated-flipped.less" />
+    <Content Include="font-awesome\less\spinning.less" />
+    <Content Include="font-awesome\less\stacked.less" />
+    <Content Include="font-awesome\less\variables.less" />
+    <Content Include="font-awesome\scss\font-awesome.scss" />
+    <Content Include="font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="font-awesome\scss\_core.scss" />
+    <Content Include="font-awesome\scss\_fixed-width.scss" />
+    <Content Include="font-awesome\scss\_icons.scss" />
+    <Content Include="font-awesome\scss\_larger.scss" />
+    <Content Include="font-awesome\scss\_list.scss" />
+    <Content Include="font-awesome\scss\_mixins.scss" />
+    <Content Include="font-awesome\scss\_path.scss" />
+    <Content Include="font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="font-awesome\scss\_spinning.scss" />
+    <Content Include="font-awesome\scss\_stacked.scss" />
+    <Content Include="font-awesome\scss\_variables.scss" />
+    <Content Include="Scripts\jquery-3.0.0.slim.min.map" />
+    <Content Include="Scripts\jquery-3.0.0.min.map" />
+    <Content Include="Scripts\umd\popper-utils.min.js.map" />
+    <Content Include="Scripts\umd\popper-utils.js.map" />
+    <Content Include="Scripts\umd\popper.min.js.map" />
+    <Content Include="Scripts\umd\popper.js.map" />
+    <Content Include="Scripts\README.md" />
+    <Content Include="Scripts\popper-utils.min.js.map" />
+    <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Scripts\popper.min.js.map" />
+    <Content Include="Scripts\popper.js.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>new_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56480</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:57075/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
